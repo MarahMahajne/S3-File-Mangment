@@ -14,7 +14,7 @@ def move_s3_files():
 
     response = s3_client.list_objects_v2(
         Bucket=bucket_name,
-        Prefix=source_folder + prefix       # customer-details/sr1_
+        Prefix=source_folder + prefix 
     )
 
     if 'Contents' not in response:
